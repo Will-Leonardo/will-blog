@@ -27,3 +27,6 @@ git remote add origin https://gitee.com/willwong/will.git
 #git push origin :gh-pages
 git push -f origin master 
 
+cd ../../
+
+cp -r README/* .vuepress/dist/
