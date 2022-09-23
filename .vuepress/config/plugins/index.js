@@ -125,6 +125,7 @@ module.exports = [
             showComment: true
         },
     ],
-    ['demo-container'],
-    ['demo-block']
+    // ['demo-container'],
+    // ['demo-block'],
+    ['demo-container-v2']
 ]
