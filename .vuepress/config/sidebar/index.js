@@ -13,22 +13,19 @@ module.exports = {
             title: '基础',
             collapsable: true,
             children: [{
-                title: '1. 小程序01',
+                title: '1. 小程序',
                 path: '/docs/note/m1',
             }, {
-                title: '2. 小程序02',
-                path: '/docs/note/m2',
-            }, {
-                title: '3. git操作',
+                title: '2. git操作',
                 path: '/docs/note/m3',
             }, {
-                title: '4. element-ui',
+                title: '3. element-ui',
                 path: '/docs/note/m4',
             }, {
-                title: '5. HTML',
+                title: '4. HTML',
                 path: '/docs/note/m5',
             }, {
-                title: '6. CSS ',
+                title: '5. CSS ',
                 path: '/docs/note/m6',
             }]
         },
