@@ -16,7 +16,7 @@
     title: "Will's blog",
     description: '斯人若彩虹，遇上方知有',
     //  dest: 'public',
-    base: '/will/',
+    base: '/will-blog/',
     head: headConf,
     theme: 'reco',
     plugins,
