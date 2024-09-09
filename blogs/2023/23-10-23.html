@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>自定义指令 | Will&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/will-blog/xin.ico">
+    <link rel="stylesheet" href="../style/main.css">
+    <meta name="description" content="斯人若彩虹，遇上方知有">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="preload" href="/will-blog/assets/css/0.styles.b39c2fd9.css" as="style"><link rel="preload" href="/will-blog/assets/js/app.cc63ade7.js" as="script"><link rel="preload" href="/will-blog/assets/js/3.f726e82e.js" as="script"><link rel="preload" href="/will-blog/assets/js/1.cde8b311.js" as="script"><link rel="preload" href="/will-blog/assets/js/73.e5fe9c14.js" as="script"><link rel="prefetch" href="/will-blog/assets/js/10.6e43ee3d.js"><link rel="prefetch" href="/will-blog/assets/js/100.f84ec286.js"><link rel="prefetch" href="/will-blog/assets/js/101.4779583b.js"><link rel="prefetch" href="/will-blog/assets/js/102.b3e2f9a9.js"><link rel="prefetch" href="/will-blog/assets/js/103.6f2a9732.js"><link rel="prefetch" href="/will-blog/assets/js/104.59e848ed.js"><link rel="prefetch" href="/will-blog/assets/js/105.9857efee.js"><link rel="prefetch" href="/will-blog/assets/js/106.a521c60d.js"><link rel="prefetch" href="/will-blog/assets/js/107.8ff794bb.js"><link rel="prefetch" href="/will-blog/assets/js/108.917f5ba9.js"><link rel="prefetch" href="/will-blog/assets/js/109.c45a4361.js"><link rel="prefetch" href="/will-blog/assets/js/11.7c2d1b14.js"><link rel="prefetch" href="/will-blog/assets/js/110.f1fc2738.js"><link rel="prefetch" href="/will-blog/assets/js/111.1ec26c0b.js"><link rel="prefetch" href="/will-blog/assets/js/112.62bda300.js"><link rel="prefetch" href="/will-blog/assets/js/113.768f9d81.js"><link rel="prefetch" href="/will-blog/assets/js/114.0ea3b56f.js"><link rel="prefetch" href="/will-blog/assets/js/115.51fcc3a3.js"><link rel="prefetch" href="/will-blog/assets/js/116.01f9d19e.js"><link rel="prefetch" href="/will-blog/assets/js/117.92837686.js"><link rel="prefetch" href="/will-blog/assets/js/118.bb83f8d2.js"><link rel="prefetch" href="/will-blog/assets/js/119.acab9fe7.js"><link rel="prefetch" href="/will-blog/assets/js/12.2ca1b82e.js"><link rel="prefetch" href="/will-blog/assets/js/120.3ca819dd.js"><link rel="prefetch" href="/will-blog/assets/js/121.b29b9f35.js"><link rel="prefetch" href="/will-blog/assets/js/122.9be77422.js"><link rel="prefetch" href="/will-blog/assets/js/123.64b447b8.js"><link rel="prefetch" href="/will-blog/assets/js/124.a64907af.js"><link rel="prefetch" href="/will-blog/assets/js/125.26a13d2b.js"><link rel="prefetch" href="/will-blog/assets/js/126.a1eb8856.js"><link rel="prefetch" href="/will-blog/assets/js/127.18722e3d.js"><link rel="prefetch" href="/will-blog/assets/js/128.4e6c1534.js"><link rel="prefetch" href="/will-blog/assets/js/129.6d7d5543.js"><link rel="prefetch" href="/will-blog/assets/js/13.e761cf81.js"><link rel="prefetch" href="/will-blog/assets/js/130.38aa8dbf.js"><link rel="prefetch" href="/will-blog/assets/js/131.0c6cf127.js"><link rel="prefetch" href="/will-blog/assets/js/132.bd69e33c.js"><link rel="prefetch" href="/will-blog/assets/js/133.4b3ea5fa.js"><link rel="prefetch" href="/will-blog/assets/js/134.3a07f5fc.js"><link rel="prefetch" href="/will-blog/assets/js/135.ffa12128.js"><link rel="prefetch" href="/will-blog/assets/js/136.816cd0db.js"><link rel="prefetch" href="/will-blog/assets/js/137.5933cb58.js"><link rel="prefetch" href="/will-blog/assets/js/138.b72a494d.js"><link rel="prefetch" href="/will-blog/assets/js/139.80171cd2.js"><link rel="prefetch" href="/will-blog/assets/js/14.6f4c412e.js"><link rel="prefetch" href="/will-blog/assets/js/140.a0376353.js"><link rel="prefetch" href="/will-blog/assets/js/141.6e5d004a.js"><link rel="prefetch" href="/will-blog/assets/js/142.2fd3fb67.js"><link rel="prefetch" href="/will-blog/assets/js/143.ed2ef7d9.js"><link rel="prefetch" href="/will-blog/assets/js/144.042a5b7b.js"><link rel="prefetch" href="/will-blog/assets/js/145.38f71d38.js"><link rel="prefetch" href="/will-blog/assets/js/146.1c63383a.js"><link rel="prefetch" href="/will-blog/assets/js/147.766f3caf.js"><link rel="prefetch" href="/will-blog/assets/js/148.798bc76a.js"><link rel="prefetch" href="/will-blog/assets/js/149.29d2002d.js"><link rel="prefetch" href="/will-blog/assets/js/15.e36010af.js"><link rel="prefetch" href="/will-blog/assets/js/150.5c4cebf1.js"><link rel="prefetch" href="/will-blog/assets/js/151.5876489e.js"><link rel="prefetch" href="/will-blog/assets/js/152.96d1a3c0.js"><link rel="prefetch" href="/will-blog/assets/js/153.f151158b.js"><link rel="prefetch" href="/will-blog/assets/js/154.e6c65604.js"><link rel="prefetch" href="/will-blog/assets/js/155.a60f7e31.js"><link rel="prefetch" href="/will-blog/assets/js/156.759b2e98.js"><link rel="prefetch" href="/will-blog/assets/js/157.89206b68.js"><link rel="prefetch" href="/will-blog/assets/js/158.5f479632.js"><link rel="prefetch" href="/will-blog/assets/js/159.f2963c08.js"><link rel="prefetch" href="/will-blog/assets/js/16.a88f2e3e.js"><link rel="prefetch" href="/will-blog/assets/js/160.5980c276.js"><link rel="prefetch" href="/will-blog/assets/js/161.36a01e4c.js"><link rel="prefetch" href="/will-blog/assets/js/162.071c24b4.js"><link rel="prefetch" href="/will-blog/assets/js/17.38f92ff7.js"><link rel="prefetch" href="/will-blog/assets/js/18.408a2ab7.js"><link rel="prefetch" href="/will-blog/assets/js/19.bf7b990c.js"><link rel="prefetch" href="/will-blog/assets/js/20.a4c621b8.js"><link rel="prefetch" href="/will-blog/assets/js/21.265a62af.js"><link rel="prefetch" href="/will-blog/assets/js/22.b275dcdd.js"><link rel="prefetch" href="/will-blog/assets/js/23.57d09ff5.js"><link rel="prefetch" href="/will-blog/assets/js/24.57928047.js"><link rel="prefetch" href="/will-blog/assets/js/25.e7735769.js"><link rel="prefetch" href="/will-blog/assets/js/26.99846b40.js"><link rel="prefetch" href="/will-blog/assets/js/27.f4087935.js"><link rel="prefetch" href="/will-blog/assets/js/28.55df460a.js"><link rel="prefetch" href="/will-blog/assets/js/29.b8097cd8.js"><link rel="prefetch" href="/will-blog/assets/js/30.cb6a708e.js"><link rel="prefetch" href="/will-blog/assets/js/31.c2b39a10.js"><link rel="prefetch" href="/will-blog/assets/js/32.2154c1e4.js"><link rel="prefetch" href="/will-blog/assets/js/33.1d11eb9d.js"><link rel="prefetch" href="/will-blog/assets/js/34.49a74d6c.js"><link rel="prefetch" href="/will-blog/assets/js/35.60297914.js"><link rel="prefetch" href="/will-blog/assets/js/36.f80d31a5.js"><link rel="prefetch" href="/will-blog/assets/js/37.36b60846.js"><link rel="prefetch" href="/will-blog/assets/js/38.19939860.js"><link rel="prefetch" href="/will-blog/assets/js/39.38cf1c4a.js"><link rel="prefetch" href="/will-blog/assets/js/4.1d5cf1cf.js"><link rel="prefetch" href="/will-blog/assets/js/40.3d12ae11.js"><link rel="prefetch" href="/will-blog/assets/js/41.1c2609ca.js"><link rel="prefetch" href="/will-blog/assets/js/42.548bf779.js"><link rel="prefetch" href="/will-blog/assets/js/43.9ac1dadd.js"><link rel="prefetch" href="/will-blog/assets/js/44.96f65f48.js"><link rel="prefetch" href="/will-blog/assets/js/45.d49ead33.js"><link rel="prefetch" href="/will-blog/assets/js/46.42a0d5de.js"><link rel="prefetch" href="/will-blog/assets/js/47.42b40f98.js"><link rel="prefetch" href="/will-blog/assets/js/48.2f29c643.js"><link rel="prefetch" href="/will-blog/assets/js/49.b0cc5503.js"><link rel="prefetch" href="/will-blog/assets/js/5.b7451a31.js"><link rel="prefetch" href="/will-blog/assets/js/50.95b9f4c0.js"><link rel="prefetch" href="/will-blog/assets/js/51.cc5e5c08.js"><link rel="prefetch" href="/will-blog/assets/js/52.d87fb7e0.js"><link rel="prefetch" href="/will-blog/assets/js/53.fcfe9bae.js"><link rel="prefetch" href="/will-blog/assets/js/54.837c0052.js"><link rel="prefetch" href="/will-blog/assets/js/55.11dd71dd.js"><link rel="prefetch" href="/will-blog/assets/js/56.f833696d.js"><link rel="prefetch" href="/will-blog/assets/js/57.959d98bf.js"><link rel="prefetch" href="/will-blog/assets/js/58.d2dd6a13.js"><link rel="prefetch" href="/will-blog/assets/js/59.67e194a8.js"><link rel="prefetch" href="/will-blog/assets/js/6.631e5979.js"><link rel="prefetch" href="/will-blog/assets/js/60.a3c8c510.js"><link rel="prefetch" href="/will-blog/assets/js/61.5b27866b.js"><link rel="prefetch" href="/will-blog/assets/js/62.ae25b565.js"><link rel="prefetch" href="/will-blog/assets/js/63.a923f257.js"><link rel="prefetch" href="/will-blog/assets/js/64.354338bd.js"><link rel="prefetch" href="/will-blog/assets/js/65.7119be86.js"><link rel="prefetch" href="/will-blog/assets/js/66.454eb7f4.js"><link rel="prefetch" href="/will-blog/assets/js/67.e55432dd.js"><link rel="prefetch" href="/will-blog/assets/js/68.d693fdd8.js"><link rel="prefetch" href="/will-blog/assets/js/69.83ab4583.js"><link rel="prefetch" href="/will-blog/assets/js/7.7300b6ea.js"><link rel="prefetch" href="/will-blog/assets/js/70.f90455b0.js"><link rel="prefetch" href="/will-blog/assets/js/71.690aaf71.js"><link rel="prefetch" href="/will-blog/assets/js/72.c18ec772.js"><link rel="prefetch" href="/will-blog/assets/js/74.e7ce58cb.js"><link rel="prefetch" href="/will-blog/assets/js/75.63c1c604.js"><link rel="prefetch" href="/will-blog/assets/js/76.7be2988b.js"><link rel="prefetch" href="/will-blog/assets/js/77.3ffa0711.js"><link rel="prefetch" href="/will-blog/assets/js/78.51ea794d.js"><link rel="prefetch" href="/will-blog/assets/js/79.a248eaf7.js"><link rel="prefetch" href="/will-blog/assets/js/8.dd4d3bd5.js"><link rel="prefetch" href="/will-blog/assets/js/80.7893746f.js"><link rel="prefetch" href="/will-blog/assets/js/81.173556c0.js"><link rel="prefetch" href="/will-blog/assets/js/82.05e7652e.js"><link rel="prefetch" href="/will-blog/assets/js/83.78c1b3d9.js"><link rel="prefetch" href="/will-blog/assets/js/84.6cdc8f83.js"><link rel="prefetch" href="/will-blog/assets/js/85.a9bdb536.js"><link rel="prefetch" href="/will-blog/assets/js/86.6d72d67e.js"><link rel="prefetch" href="/will-blog/assets/js/87.0a264e17.js"><link rel="prefetch" href="/will-blog/assets/js/88.6abc6ad9.js"><link rel="prefetch" href="/will-blog/assets/js/89.44129f88.js"><link rel="prefetch" href="/will-blog/assets/js/9.c6c601bc.js"><link rel="prefetch" href="/will-blog/assets/js/90.41574ab2.js"><link rel="prefetch" href="/will-blog/assets/js/91.47acfeac.js"><link rel="prefetch" href="/will-blog/assets/js/92.b00a0266.js"><link rel="prefetch" href="/will-blog/assets/js/93.15f485c8.js"><link rel="prefetch" href="/will-blog/assets/js/94.25ceafe4.js"><link rel="prefetch" href="/will-blog/assets/js/95.a37654ce.js"><link rel="prefetch" href="/will-blog/assets/js/96.69fe3c70.js"><link rel="prefetch" href="/will-blog/assets/js/97.f4d1ec48.js"><link rel="prefetch" href="/will-blog/assets/js/98.398f62fa.js"><link rel="prefetch" href="/will-blog/assets/js/99.69675076.js">
+    <link rel="stylesheet" href="/will-blog/assets/css/0.styles.b39c2fd9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>Will's blog</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>Will</span>
+            
+          <span data-v-64685f0e>2020 - </span>
+          2024
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/will-blog/" class="home-link router-link-active"><img src="/will-blog/xin.png" alt="Will's blog" class="logo"> <span class="site-name">Will's blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/will-blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-coding"></i>
+      前端
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/will-blog/docs/note/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/docs/books/" class="nav-link"><i class="iconfont reco-npm"></i>
+  阅读书籍
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/docs/article/" class="nav-link"><i class="iconfont reco-api"></i>
+  质量文章
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/docs/dailyNotes/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  日常笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/will-blog/categories/规范编码/" class="nav-link"><i class="iconfont undefined"></i>
+  规范编码
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/项目总结/" class="nav-link"><i class="iconfont undefined"></i>
+  项目总结
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/Vue组件/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue组件
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/工具js库/" class="nav-link"><i class="iconfont undefined"></i>
+  工具js库
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/javaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  javaScript
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/组件/" class="nav-link"><i class="iconfont undefined"></i>
+  组件
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/TypeScript/" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/基础知识/" class="nav-link"><i class="iconfont undefined"></i>
+  基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/总结/" class="nav-link"><i class="iconfont undefined"></i>
+  总结
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/日常笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  日常笔记
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/css/" class="nav-link"><i class="iconfont undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/element/" class="nav-link"><i class="iconfont undefined"></i>
+  element
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/学习计划/" class="nav-link"><i class="iconfont undefined"></i>
+  学习计划
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/Vue3/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/ElementPlus/" class="nav-link"><i class="iconfont undefined"></i>
+  ElementPlus
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/Css/" class="nav-link"><i class="iconfont undefined"></i>
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/js/" class="nav-link"><i class="iconfont undefined"></i>
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/总结记录/" class="nav-link"><i class="iconfont undefined"></i>
+  总结记录
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/数据可视化/" class="nav-link"><i class="iconfont undefined"></i>
+  数据可视化
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/算法/" class="nav-link"><i class="iconfont undefined"></i>
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/Vite/" class="nav-link"><i class="iconfont undefined"></i>
+  Vite
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/面试/" class="nav-link"><i class="iconfont undefined"></i>
+  面试
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/uni-app/" class="nav-link"><i class="iconfont undefined"></i>
+  uni-app
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/HTML/" class="nav-link"><i class="iconfont undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/CSS/" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/小程序/" class="nav-link"><i class="iconfont undefined"></i>
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/ui框架/" class="nav-link"><i class="iconfont undefined"></i>
+  ui框架
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/React.js/" class="nav-link"><i class="iconfont undefined"></i>
+  React.js
+</a></li></ul></div></div><div class="nav-item"><a href="/will-blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      部分项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/zhenzhencai/FontEndInterview" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  面试指南
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="/will-blog/docs/protests/VueUI.html" class="nav-link"><i class="iconfont reco-github"></i>
+  Vue轮子
+</a></li></ul></div></div><div class="nav-item"><a href="/will-blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/will-blog/docs/disorder/m1.html" class="nav-link"><i class="iconfont reco-coding"></i>
+  题目汇总
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/willwong" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mayun"></i>
+  Gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/wangliangxin" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1418580404&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-qq"></i>
+  QQ
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/will-blog/xin.png" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    Will
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>99</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>6</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/will-blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-coding"></i>
+      前端
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/will-blog/docs/note/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  学习笔记
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/docs/books/" class="nav-link"><i class="iconfont reco-npm"></i>
+  阅读书籍
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/docs/article/" class="nav-link"><i class="iconfont reco-api"></i>
+  质量文章
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/docs/dailyNotes/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  日常笔记
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/will-blog/categories/规范编码/" class="nav-link"><i class="iconfont undefined"></i>
+  规范编码
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/项目总结/" class="nav-link"><i class="iconfont undefined"></i>
+  项目总结
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/Vue/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/Vue组件/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue组件
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/vue/" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/工具js库/" class="nav-link"><i class="iconfont undefined"></i>
+  工具js库
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/javaScript/" class="nav-link"><i class="iconfont undefined"></i>
+  javaScript
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/组件/" class="nav-link"><i class="iconfont undefined"></i>
+  组件
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/TypeScript/" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/基础知识/" class="nav-link"><i class="iconfont undefined"></i>
+  基础知识
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/总结/" class="nav-link"><i class="iconfont undefined"></i>
+  总结
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/日常笔记/" class="nav-link"><i class="iconfont undefined"></i>
+  日常笔记
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/css/" class="nav-link"><i class="iconfont undefined"></i>
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/element/" class="nav-link"><i class="iconfont undefined"></i>
+  element
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/学习计划/" class="nav-link"><i class="iconfont undefined"></i>
+  学习计划
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/其他/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/Vue3/" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/ElementPlus/" class="nav-link"><i class="iconfont undefined"></i>
+  ElementPlus
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/Css/" class="nav-link"><i class="iconfont undefined"></i>
+  Css
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/js/" class="nav-link"><i class="iconfont undefined"></i>
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/总结记录/" class="nav-link"><i class="iconfont undefined"></i>
+  总结记录
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/数据可视化/" class="nav-link"><i class="iconfont undefined"></i>
+  数据可视化
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/算法/" class="nav-link"><i class="iconfont undefined"></i>
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/Vite/" class="nav-link"><i class="iconfont undefined"></i>
+  Vite
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/面试/" class="nav-link"><i class="iconfont undefined"></i>
+  面试
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/uni-app/" class="nav-link"><i class="iconfont undefined"></i>
+  uni-app
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/HTML/" class="nav-link"><i class="iconfont undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/CSS/" class="nav-link"><i class="iconfont undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/小程序/" class="nav-link"><i class="iconfont undefined"></i>
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/ui框架/" class="nav-link"><i class="iconfont undefined"></i>
+  ui框架
+</a></li><li class="dropdown-item"><!----> <a href="/will-blog/categories/React.js/" class="nav-link"><i class="iconfont undefined"></i>
+  React.js
+</a></li></ul></div></div><div class="nav-item"><a href="/will-blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      部分项目
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/zhenzhencai/FontEndInterview" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  面试指南
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="/will-blog/docs/protests/VueUI.html" class="nav-link"><i class="iconfont reco-github"></i>
+  Vue轮子
+</a></li></ul></div></div><div class="nav-item"><a href="/will-blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><a href="/will-blog/docs/disorder/m1.html" class="nav-link"><i class="iconfont reco-coding"></i>
+  题目汇总
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      关于我
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://gitee.com/willwong" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-mayun"></i>
+  Gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/wangliangxin" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1418580404&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-qq"></i>
+  QQ
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>自定义指令</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>Will</span>
+            
+          <span data-v-64685f0e>2020 - </span>
+          2024
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">自定义指令</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>Will</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2023-10-23</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default" style="display:none;"><div id="boxx" data-v-f4ca0dac><div data-v-f4ca0dac><p v-if="true" class="custom-block-title" data-v-f4ca0dac></p> <p v-if="true" data-v-f4ca0dac></p></div></div> <p>最近在做需求的时候有个复制文案的功能被重复使用，思考着可以使用vue的自定义指令，这样才能更好的复用代码。
+话不多说，先介绍一下自定义指令。 <a href="https://cn.vuejs.org/guide/reusability/custom-directives.html" target="_blank" rel="noopener noreferrer">官方文档传送门<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="什么是指令"><a href="#什么是指令" class="header-anchor">#</a> 什么是指令？</h2> <p>在Vue中，指令（Directive）是一种<strong>特殊的属性</strong>，用于给HTML元素添加特定的行为或功能。指令以v-开头，后面跟着指令的名称，例如v-bind、v-if、v-for等（这些是内置指令）。指令可以用于控制<strong>元素的显示、隐藏、绑定属性、循环渲染等</strong>操作。通过指令，我们可以在模板中直接操作数据和DOM，使得开发更加灵活和高效。</p> <h2 id="具体场景"><a href="#具体场景" class="header-anchor">#</a> 具体场景</h2> <ul><li><p>自动聚焦：可以创建一个自定义指令，在元素插入到DOM后自动将焦点设置到该元素上。</p></li> <li><p>懒加载：可以创建一个自定义指令，在图片或其他资源进入可视区域时才加载，以提升页面加载性能。</p></li> <li><p>滚动加载：可以创建一个自定义指令，在滚动到指定位置时触发加载更多数据的操作。</p></li> <li><p>防抖和节流：可以创建自定义指令来实现防抖和节流的效果，以避免频繁触发事件。</p></li> <li><p>拖拽：可以创建一个自定义指令，使元素可以通过鼠标或触摸事件进行拖拽操作。</p></li> <li><p>格式化输入：可以创建一个自定义指令，限制输入框只能输入特定格式的内容，如数字、日期等。</p></li> <li><p>按钮权限控制：可以创建一个自定义指令，根据用户的权限动态控制按钮的显示或禁用状态。</p></li> <li><p>图片预览：可以创建一个自定义指令，使图片在点击或悬停时以弹窗或其他方式进行预览。</p></li> <li><p>复制文案：将要复制的文案传递给指令，当按钮被点击时，指令会将文案复制到剪贴板中。</p></li></ul> <h2 id="实现"><a href="#实现" class="header-anchor">#</a> 实现</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> DirectiveBinding <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ElMessage <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;element-plus&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">interface</span> <span class="token class-name">CopyHTMLElement</span><span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span> <span class="token keyword">extends</span> <span class="token class-name">HTMLElement</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">_copyTextHandler</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">text<span class="token operator">:</span> <span class="token constant">T</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+  copyText<span class="token operator">:</span> string<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">writeText</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">text<span class="token operator">:</span> string</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>text<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">&quot;复制文本失败:&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  navigator<span class="token punctuation">.</span>clipboard
+    <span class="token punctuation">.</span><span class="token function">writeText</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;文本已复制&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">ElMessage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        message<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">复制成功：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>text<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+        type<span class="token operator">:</span> <span class="token string">&quot;success&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">&quot;复制文本失败:&quot;</span><span class="token punctuation">,</span> error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> copyText <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token parameter">el<span class="token operator">:</span> CopyHTMLElement<span class="token operator">&lt;</span>MouseEvent <span class="token operator">|</span> string<span class="token operator">&gt;</span><span class="token punctuation">,</span> binding<span class="token operator">:</span> DirectiveBinding</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>binding<span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span>el<span class="token punctuation">,</span> <span class="token punctuation">{</span> copyText<span class="token operator">:</span> binding<span class="token punctuation">.</span>value <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    el<span class="token punctuation">.</span><span class="token function-variable function">_copyTextHandler</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">writeText</span><span class="token punctuation">(</span>el<span class="token punctuation">.</span>copyText<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    el<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> el<span class="token punctuation">.</span>_copyTextHandler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">updated</span><span class="token punctuation">(</span><span class="token parameter">el<span class="token operator">:</span> CopyHTMLElement<span class="token operator">&lt;</span>string<span class="token operator">&gt;</span><span class="token punctuation">,</span> binding<span class="token operator">:</span> DirectiveBinding</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span>el<span class="token punctuation">,</span> <span class="token punctuation">{</span> copyText<span class="token operator">:</span> binding<span class="token punctuation">.</span>value <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">unmounted</span><span class="token punctuation">(</span><span class="token parameter">el<span class="token operator">:</span> CopyHTMLElement<span class="token operator">&lt;</span>MouseEvent<span class="token operator">&gt;</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    el<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> el<span class="token punctuation">.</span>_copyTextHandler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> copyText<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> App<span class="token punctuation">,</span> Directive <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> AutoFocus <span class="token keyword">from</span> <span class="token string">&quot;./autoFocus&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> CopyText <span class="token keyword">from</span> <span class="token string">&quot;./copyText&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> directivesList<span class="token operator">:</span> Record<span class="token operator">&lt;</span>string<span class="token punctuation">,</span> Directive<span class="token operator">&gt;</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  AutoFocus<span class="token punctuation">,</span>
+  CopyText<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">install</span><span class="token punctuation">(</span><span class="token parameter">app<span class="token operator">:</span> App</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token punctuation">[</span>key<span class="token punctuation">,</span> directive<span class="token punctuation">]</span> <span class="token keyword">of</span> Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span>directivesList<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      app<span class="token punctuation">.</span><span class="token function">directive</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> directive<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><div class="language-ts line-numbers-mode"><pre class="language-ts"><code><span class="token keyword">import</span> directives <span class="token keyword">from</span> <span class="token string">&quot;@/directives&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">createApp</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>directives<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>router<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>ElementPlus<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">&quot;#app&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id=""><a href="#" class="header-anchor">#</a></h2></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">11/9/2023, 3:55:10 PM</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      欢迎来到 Will's blog
+    </div> <div class="operation" style="right:90px;bottom:40px;display:none;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:0px;opacity:1;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div></div><canvas id="vuepress-canvas-cursor"></canvas></div></div>
+    <script src="/will-blog/assets/js/app.cc63ade7.js" defer></script><script src="/will-blog/assets/js/3.f726e82e.js" defer></script><script src="/will-blog/assets/js/1.cde8b311.js" defer></script><script src="/will-blog/assets/js/73.e5fe9c14.js" defer></script>
+  </body>
+</html>
