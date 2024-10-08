@@ -8,7 +8,6 @@ set -e
 # 生成静态文件
 npm run build
 
-
 cp -r orther/README.md  .vuepress/dist/README.md
 
 # 进入生成的文件夹
@@ -20,9 +19,9 @@ cd .vuepress/dist/
 git init
 git add -A
 git commit -m 'deploy'
-git remote add origin https://gitee.com/willwong/will.git
+# git remote add origin https://gitee.com/willwong/will.git
 
-# git remote add origin https://github.com/wangliangxin/will-blog.git
+git remote add origin https://github.com/wangliangxin/will-blog.git
 
 #git checkout -b gh-pages
 
@@ -30,5 +29,4 @@ git remote add origin https://gitee.com/willwong/will.git
 #git push -f git@github.com:zpj80231/zpj80231.github.io.git gh-pages
 #git push origin :gh-pages
 git push -f origin master 
-
 
