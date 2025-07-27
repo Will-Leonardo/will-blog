@@ -5,7 +5,7 @@
  # @Description: 
  # @Date: 2024-12-17 17:05:56
  # @LastEditors: wangliangxin3
- # @LastEditTime: 2025-07-27 17:52:55
+ # @LastEditTime: 2025-07-27 17:55:14
 ### 
 # 若不想使用自动部署，可以直接运行命令 'npm run deploy' 本地自动提交部署
 
@@ -36,5 +36,5 @@ git remote add origin https://github.com/Will-Leonardo/will-blog.git
 # 如果发布到 https://<USERNAME>.github.io
 #git push -f git@github.com:zpj80231/zpj80231.github.io.git gh-pages
 #git push origin :gh-pages
-git push -f origin master 
+git push -f 
 
