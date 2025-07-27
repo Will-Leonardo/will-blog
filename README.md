@@ -4,7 +4,7 @@ heroText: Will's blog
 tagline: 斯人若彩虹，遇上方知有
 bgImage: '/bg.jpg'
 bgImageStyle: {
-  height: '100vh'
+  height: '68vh'
 }
 isShowTitleInHome: true
 
