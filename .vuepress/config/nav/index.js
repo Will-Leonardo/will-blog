@@ -1,3 +1,11 @@
+/*
+ * @Autor: wangliangxin3
+ * @Email: wangliangxin3@jd.com
+ * @Description: 
+ * @Date: 2024-12-17 17:05:56
+ * @LastEditors: wangliangxin3
+ * @LastEditTime: 2025-08-29 18:13:00
+ */
 
 /**
  * @description 顶部nav导航栏
@@ -43,7 +51,7 @@ module.exports = [
         icon: 'reco-message',
         items: [
             { text: 'Gitee', link: 'https://gitee.com/willwong', icon: 'reco-mayun' },
-            { text: 'GitHub', link: 'https://github.com/wangliangxin', icon: 'reco-github' },
+            { text: 'GitHub', link: 'https://github.com/Will-Leonardo', icon: 'reco-github' },
             { text: 'QQ', link: 'http://wpa.qq.com/msgrd?v=3&uin=1418580404&site=qq&menu=yes', icon: 'reco-qq' }
         ]
     }
