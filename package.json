@@ -6,7 +6,10 @@
         "dev": "vuepress dev",
         "serve": "vuepress dev",
         "build": "vuepress build .",
-        "deploy": "./deploy.sh"
+        "deploy": "./deploy.sh",
+        "question": "node generate-question.js",
+        "question:today": "node generate-question.js",
+        "question:add": "node add-question.js"
     },
     "devDependencies": {
         "@vuepress/plugin-medium-zoom": "^1.8.0",

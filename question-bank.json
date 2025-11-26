@@ -1,0 +1,919 @@
+{
+  "framework": [
+    {
+      "title": "Vue3 的响应式原理和 Vue2 有什么区别？Proxy 相比 Object.defineProperty 的优势是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "Vue 的 nextTick 原理是什么？什么时候需要使用 nextTick？请说明其实现机制。",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "React 的虚拟 DOM 和 Vue 的虚拟 DOM 有什么区别？请说明 diff 算法的差异。",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "Vue 的 keep-alive 组件是如何实现的？它如何缓存组件状态？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请解释 React Hooks 的实现原理，为什么 Hooks 不能在条件语句中使用？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "Vue 的 computed 和 watch 的区别是什么？它们的实现原理分别是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请解释 Vue 的组件通信方式，父子组件、兄弟组件、跨级组件如何通信？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "React 的 Fiber 架构是什么？它解决了什么问题？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "Vue 的模板编译原理是什么？template 如何转换为 render 函数？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请解释 React 的合成事件（SyntheticEvent）机制，为什么要使用合成事件？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "Vue3 的 Composition API 和 Options API 的区别是什么？各自的适用场景？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "React 的 Concurrent Mode 是什么？它如何提升用户体验？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "Vue 的 $set 和 $delete 的原理是什么？为什么 Vue2 需要这些方法？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "React 的 Suspense 和 ErrorBoundary 是如何工作的？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "Vue 的 slot 插槽机制是如何实现的？作用域插槽的原理是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "React 的 useMemo 和 useCallback 的区别是什么？什么时候使用？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "Vue 的 mixin 和 Vue3 的 composables 有什么区别？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "React 的 Context API 和 Redux 的区别是什么？如何选择？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "Vue 的指令（directive）是如何实现的？如何自定义指令？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "React 的 useRef 和 useState 的区别是什么？useRef 的内部实现原理？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "Vue 的 provide/inject 和 React 的 Context 有什么区别？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "React 的 useReducer 和 useState 的区别是什么？适用场景？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "Vue 的异步组件是如何实现的？如何实现组件的懒加载？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "React 的 useEffect 的依赖数组是如何工作的？为什么需要依赖数组？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "Vue 的 transition 组件是如何实现动画的？",
+      "hasCode": false,
+      "source": "真实面试题"
+    }
+  ],
+  "browser": [
+    {
+      "title": "请解释一下浏览器的事件循环机制，宏任务和微任务的区别是什么？请给出执行顺序分析。",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "前端性能优化有哪些策略？请结合实际项目经验，说说你用过哪些优化手段，效果如何？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "浏览器渲染原理是什么？请详细说明从输入 URL 到页面渲染的完整过程。",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "什么是重排（reflow）和重绘（repaint）？如何减少重排和重绘？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请解释浏览器的同源策略，什么是跨域？有哪些跨域解决方案？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "浏览器缓存机制有哪些？强缓存和协商缓存的区别是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请解释浏览器的垃圾回收机制，V8 引擎的垃圾回收算法是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "前端内存泄漏的原因有哪些？如何排查和避免内存泄漏？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "什么是关键渲染路径（Critical Rendering Path）？如何优化？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请解释浏览器的工作线程，Web Worker 和 Service Worker 的区别是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "如何优化首屏加载时间？有哪些具体的优化策略？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 CRP（Critical Rendering Path）？如何优化关键渲染路径？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "浏览器如何处理 CSS 和 JavaScript 的阻塞问题？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是合成层（Compositing Layer）？如何触发合成层？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何优化长列表的性能？虚拟滚动是如何实现的？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "浏览器的事件委托原理是什么？如何使用事件委托优化性能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 RAF（RequestAnimationFrame）？它和 setTimeout 的区别是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现图片懒加载？有哪些优化策略？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 Intersection Observer API？如何使用它优化性能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "浏览器如何解析 HTML？DOM 树的构建过程是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 BFC（Block Formatting Context）？如何触发 BFC？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现无限滚动（Infinite Scroll）？有哪些性能优化点？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "浏览器如何处理 Cookie、LocalStorage 和 SessionStorage？它们的区别是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 IndexedDB？它和 LocalStorage 的区别是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端离线缓存？Service Worker 的工作原理是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    }
+  ],
+  "engineering": [
+    {
+      "title": "什么是 Webpack 的 Tree Shaking？它是如何工作的？在什么情况下 Tree Shaking 会失效？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "Webpack 和 Vite 的区别是什么？Vite 为什么开发时更快？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "Webpack 的构建流程是什么？loader 和 plugin 的区别是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请解释模块化的发展历程，CommonJS、AMD、ES Module 的区别是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "如何优化 Webpack 的打包速度和体积？有哪些具体的优化策略？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "什么是代码分割（Code Splitting）？如何实现按需加载？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请解释 Babel 的编译原理，它如何将 ES6+ 代码转换为 ES5？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "如何实现前端项目的 CI/CD？你使用过哪些 CI/CD 工具？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "前端项目的版本管理策略是什么？如何管理依赖版本？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "如何实现前端项目的错误监控和性能监控？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "Rollup 和 Webpack 的区别是什么？各自的适用场景？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 ESM（ES Module）？它和 CommonJS 的区别是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现微前端架构？qiankun、single-spa 的原理是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 Module Federation？它如何实现模块共享？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端项目的灰度发布？有哪些策略？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何优化 npm 包的安装速度？有哪些优化策略？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 pnpm？它和 npm、yarn 的区别是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端项目的多环境配置？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 Source Map？它的原理是什么？有哪些类型？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端项目的自动化测试？有哪些测试策略？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 Monorepo？如何管理 Monorepo 项目？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端项目的代码规范检查？ESLint、Prettier 如何配置？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端项目的自动化部署？有哪些部署策略？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 Docker？如何在前端项目中使用 Docker？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端项目的性能监控？有哪些监控指标？",
+      "hasCode": false,
+      "source": "真实面试题"
+    }
+  ],
+  "network": [
+    {
+      "title": "HTTP/2 相比 HTTP/1.1 有哪些改进？HTTP/3 又带来了什么新特性？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "TCP 和 UDP 的区别是什么？TCP 的三次握手和四次挥手过程是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "HTTPS 的实现原理是什么？SSL/TLS 握手过程是怎样的？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "HTTP 状态码有哪些？301、302、304 的区别是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请解释 HTTP 的缓存机制，Cache-Control 和 Expires 的区别是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "什么是 CDN？CDN 的工作原理是什么？如何选择合适的 CDN？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "WebSocket 和 HTTP 的区别是什么？WebSocket 是如何建立连接的？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请解释 RESTful API 的设计原则，什么是 RESTful 风格？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "什么是 GraphQL？它和 RESTful API 的区别是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请解释 CORS 预检请求（preflight request）的机制，什么情况下会触发？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "什么是 HTTP 的 Keep-Alive？它如何提升性能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现请求重试机制？有哪些重试策略？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现请求的防抖和节流？它们的应用场景是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 HTTP 的队头阻塞问题？HTTP/2 如何解决这个问题？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现接口的幂等性？有哪些方案？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现接口的限流？有哪些限流算法？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 Token 刷新机制？如何实现无感刷新？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现文件上传的断点续传？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现大文件的分片上传？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 XSS 攻击？如何防范 XSS 攻击？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 CSRF 攻击？如何防范 CSRF 攻击？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现接口的加密传输？有哪些加密方案？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "什么是 JWT？它的工作原理是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现 WebSocket 的心跳检测？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现接口的请求队列？",
+      "hasCode": false,
+      "source": "真实面试题"
+    }
+  ],
+  "algorithm": [
+    {
+      "title": "请实现一个深拷贝函数，需要考虑哪些边界情况？如何处理循环引用？",
+      "hasCode": true,
+      "source": "基础题库"
+    },
+    {
+      "title": "请实现一个防抖（debounce）和节流（throttle）函数，并说明它们的应用场景。",
+      "hasCode": true,
+      "source": "基础题库"
+    },
+    {
+      "title": "请实现一个 Promise，要求支持 then、catch、finally 方法。",
+      "hasCode": true,
+      "source": "基础题库"
+    },
+    {
+      "title": "请实现一个函数，实现数组的扁平化，支持指定深度。",
+      "hasCode": true,
+      "source": "基础题库"
+    },
+    {
+      "title": "请实现一个函数，实现数组去重，要求考虑多种数据类型。",
+      "hasCode": true,
+      "source": "基础题库"
+    },
+    {
+      "title": "请实现一个函数，实现 call、apply、bind 方法。",
+      "hasCode": true,
+      "source": "基础题库"
+    },
+    {
+      "title": "请实现一个函数，实现 instanceof 的功能。",
+      "hasCode": true,
+      "source": "基础题库"
+    },
+    {
+      "title": "请实现一个函数，实现 new 操作符的功能。",
+      "hasCode": true,
+      "source": "基础题库"
+    },
+    {
+      "title": "请实现一个函数，实现数组的 reduce 方法。",
+      "hasCode": true,
+      "source": "基础题库"
+    },
+    {
+      "title": "请实现一个函数，实现链表的反转。",
+      "hasCode": true,
+      "source": "基础题库"
+    },
+    {
+      "title": "请实现一个函数，实现数组的排序（快速排序、归并排序等）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现二叉树的遍历（前序、中序、后序）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现 LRU 缓存算法。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现发布订阅模式（EventEmitter）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现观察者模式。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现单例模式。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现数组的乱序（洗牌算法）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现两个大数相加。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现字符串的匹配（KMP 算法）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现数组的交集、并集、差集。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现数组的 chunk（分组）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现数组的 groupBy（按条件分组）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现数组的 shuffle（随机打乱）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现数组的 flatten（扁平化）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现数组的 unique（去重）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现数组的 partition（分区）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现数组的 zip（压缩）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现数组的 unzip（解压）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现数组的 rotate（旋转）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    },
+    {
+      "title": "请实现一个函数，实现数组的 compact（去除假值）。",
+      "hasCode": true,
+      "source": "真实面试题"
+    }
+  ],
+  "project": [
+    {
+      "title": "请设计一个前端权限管理系统，如何实现路由权限、按钮权限、接口权限的控制？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "前端如何进行错误监控和上报？如何区分 JS 错误、资源加载错误、Promise 错误等？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请解释一下前端路由的实现原理？hash 路由和 history 路由的区别是什么？各自的优缺点？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "如何实现一个状态管理方案？请对比 Vuex、Pinia、Redux 的差异。",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请设计一个前端组件库，需要考虑哪些方面？如何实现组件的按需加载？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "如何实现前端的国际化（i18n）方案？需要考虑哪些问题？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "如何实现一个微前端架构？qiankun、single-spa 等框架的原理是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请设计一个前端数据可视化方案，如何实现大数据量的渲染优化？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "如何实现一个前端拖拽系统？需要考虑哪些技术点？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "请设计一个前端埋点系统，如何实现无侵入式的数据采集？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "如何实现一个前端表单验证系统？有哪些验证策略？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端表格组件？如何优化大数据量表格的性能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端编辑器？需要考虑哪些技术点？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端图表库？有哪些渲染方案？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端视频播放器？需要考虑哪些功能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端音频播放器？需要考虑哪些功能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端文件上传组件？需要考虑哪些功能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端图片预览组件？需要考虑哪些功能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端日历组件？需要考虑哪些功能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端时间选择器？需要考虑哪些功能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端树形组件？需要考虑哪些功能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端级联选择器？需要考虑哪些功能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端搜索组件？需要考虑哪些功能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端分页组件？需要考虑哪些功能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现一个前端标签页组件？需要考虑哪些功能？",
+      "hasCode": false,
+      "source": "真实面试题"
+    }
+  ],
+  "typescript": [
+    {
+      "title": "TypeScript 的类型系统有哪些特性？泛型、联合类型、交叉类型的区别是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "TypeScript 的装饰器（Decorator）是什么？如何使用？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "TypeScript 的 namespace 和 module 的区别是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "如何实现 TypeScript 的类型推断？请举例说明。",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "TypeScript 的声明文件（.d.ts）是什么？如何编写？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "TypeScript 的接口（interface）和类型别名（type）的区别是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "TypeScript 的泛型约束是什么？如何使用？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "TypeScript 的条件类型（Conditional Types）是什么？如何使用？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "TypeScript 的映射类型（Mapped Types）是什么？如何使用？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "TypeScript 的工具类型（Utility Types）有哪些？如何使用？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "TypeScript 的类型守卫（Type Guards）是什么？如何使用？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "TypeScript 的类型断言（Type Assertion）和类型转换的区别是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "TypeScript 的模块系统是什么？如何实现模块的类型定义？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "TypeScript 的命名空间（Namespace）和模块（Module）的区别是什么？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "TypeScript 的声明合并（Declaration Merging）是什么？如何使用？",
+      "hasCode": false,
+      "source": "真实面试题"
+    }
+  ],
+  "testing": [
+    {
+      "title": "前端单元测试有哪些框架？Jest、Vitest 的区别是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "如何编写 Vue/React 组件的单元测试？需要考虑哪些场景？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "什么是 E2E 测试？Cypress、Playwright 的区别是什么？",
+      "hasCode": false,
+      "source": "基础题库"
+    },
+    {
+      "title": "如何编写前端测试用例？有哪些测试策略？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端测试的覆盖率统计？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端测试的 Mock？有哪些 Mock 方案？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端测试的快照测试？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端测试的集成测试？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端测试的性能测试？",
+      "hasCode": false,
+      "source": "真实面试题"
+    },
+    {
+      "title": "如何实现前端测试的视觉回归测试？",
+      "hasCode": false,
+      "source": "真实面试题"
+    }
+  ]
+}
+
